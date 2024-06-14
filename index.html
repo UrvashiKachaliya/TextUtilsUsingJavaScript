@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextUtils</title>
+    <style>
+        button{
+            background-color: rgb(64, 64, 180);
+            border-radius: 10px;
+            padding:10px;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <textarea cols="68" rows="10" id="inputs" placeholder="Enter your text here"></textarea><br/><br/>
+    <button onclick="upperCase()">Uppercase</button>
+    <button onclick="lowerCase()">Lowercase</button>
+    <button onclick="characterCount()">Character Count</button>
+    <button onclick="wordCount()">Word Count</button>
+    <button onclick="copyToClipBoard()">Copy To ClipBoard</button><br/><br/>
+    <button onclick="removeExtraSpace()">Remove ExtraSpace</button>
+    <button onclick="reverseText()">Reverse Text</button>
+    <button onclick="speechListener()">Listen Now</button>
+    <button onclick="Clear()">Clear</button>
+    <h1>Summary of Your Text:</h1>
+    <p id="word">Number of Words:</p>
+    <p id="character">Number of Characters</p>
+
+    <h1>Preview:</h1>
+    <p id="pre"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
